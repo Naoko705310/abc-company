@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Windsurf用プロンプト雛形</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2em;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    code {
+      background-color: #f4f4f4;
+      padding: 0.2em 0.4em;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+<h1>トークスクリプトガイドアプリ用 Windsurf プロンプト雛形</h1>
+
+<h2>プロジェクトの目的</h2>
+
+<p>営業担当者がスムーズに電話営業できるよう、トークスクリプトを段階的にナビゲートするアプリを作ります。</p>
+
+<h2>トークフロー構造（記法ルール）</h2>
+
+<ul>
+<li>各ステップには番号をつける（例：ステップ1）</li>
+<li>メッセージと選択肢を記述</li>
+<li>選択肢に応じて遷移先ステップを明記</li>
+</ul>
+
+<h2>記述例</h2>
+
+<h3>ステップ1: 挨拶と確認</h3>
+
+<p><strong>メッセージ</strong>: 「○○様でお間違いないでしょうか？」
+- はい → ステップ2へ
+- いいえ → ステップ98へ</p>
+
+<h3>ステップ2: 用件伝達</h3>
+
+<p><strong>メッセージ</strong>: 「○○についてご案内です。お時間よろしいでしょうか？」
+- はい → ステップ3へ
+- いいえ → ステップ98へ</p>
+
+<h2>FAQの表示条件</h2>
+
+<ul>
+<li><code>ステップ番号</code> に <code>FAQ表示</code> フラグを付ける</li>
+<li>フラグがある場合は、事前に定義されたFAQを表示</li>
+</ul>
+
+<h2>注意点</h2>
+
+<ul>
+<li>HTML/CSS/JSで動作するアプリ想定</li>
+<li>GitHub Pagesで公開する前提</li>
+</ul>
+
+</body>
+</html>
